@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #707070;
+  font-family: 'Exo 2', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.16);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+header nav span a {
+  color: #707070;
+  font-size: 20px;
+  font-weight: bold
+}
+
+header nav ul {
+  display: flex;
+  column-gap: 50px;
+}
+
+header nav ul li a {
+  color: #707070
+}
+
+section.box-title {
+  margin: 30px auto;
+  background-color: #C9C9C9;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 15px;
+  line-height: 1.5;
+}
+
+section.box-title h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+section > h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+section > hr {
+  margin-bottom: 10px;
+  width: 85%;
+}
+section > p {
+  line-height: 22px;
+}
+.w-8 {
+  width: 80%;
+}
+section ol {
+  padding: 20px 0;
+  padding-left: 50px;
+}
+
+footer {
+  background-color: #c9c9c9;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+  footer p {
+    font-size: 14px;
+  }
+}
