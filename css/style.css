@@ -31,13 +31,17 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  padding: 20px 0;
 }
 
 header nav span a {
   color: #707070;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold
+}
+
+header nav span a:hover {
+  color: #037cff;
 }
 
 header nav ul {
@@ -46,52 +50,272 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #707070
+  color: #707070;
+  font-size: 22px;
+}
+
+header nav ul li a:hover {
+  color: #037cff
 }
 
 section.box-title {
-  margin: 30px auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
   background-color: #C9C9C9;
   text-align: center;
   padding: 40px 0;
   border-radius: 15px;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
-section.box-title h1 {
+section.box-title h2 {
   font-size: 50px;
   font-weight: 100;
 }
 
+section.box-title p {
+  font-size: 27px;
+  font-weight: 300;
+}
+
 section > h3 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 section > hr {
   margin-bottom: 10px;
-  width: 85%;
+  width: 90%;
+  border-color: #707070;
 }
 section > p {
-  line-height: 22px;
+  line-height: 30px;
+  font-size: 23px;
+  font-weight: 400;
 }
 .w-8 {
-  width: 80%;
+  width: 85%;
 }
 section ol {
   padding: 20px 0;
   padding-left: 50px;
+  font-size: 22px;
+  font-weight: light;
 }
 
 footer {
   background-color: #c9c9c9;
   text-align: center;
-  padding: 10px 0;
+  padding: 12px 0;
   width: 100%;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
-  footer p {
+@media (max-width: 480px) {
+  header nav {
+    padding: 10px 0;
+  }
+  header nav span a {
+    font-size: 15px;
+  }
+  header nav ul {
+    column-gap: 12px;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  section.box-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    border-radius: 10px;
+    line-height: 1.2;
+  }
+  section.box-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  section.box-title p {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  section > h3 {
+    font-size: 19px;
+  }
+  section > hr {
+    width: 100%;
+  }
+  section > p {
+    line-height: 20px;
+    font-size: 16px;
+  }
+  .w-8 {
+    width: 100%;
+  }
+  section ol {
+    padding: 10px 0;
+    padding-left: 30px;
+    font-size: 15px;
+  }
+  footer {
     font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  header nav {
+    padding: 15px 0;
+  }
+  header nav span a {
+    font-size: 17px;
+  }
+  header nav ul {
+    column-gap: 20px;
+  }
+  header nav ul li a {
+    font-size: 17px;
+  }
+  section.box-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    border-radius: 10px;
+    line-height: 1.4;
+  }
+  section.box-title h2 {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  section.box-title p {
+    font-size: 19px;
+    font-weight: 300;
+  }
+  section > h3 {
+    font-size: 20px;
+  }
+  section > hr {
+    width: 100%;
+  }
+  section > p {
+    line-height: 22px;
+    font-size: 18px;
+  }
+  .w-8 {
+    width: 100%;
+  }
+  section ol {
+    padding: 12px 0;
+    padding-left: 35px;
+    font-size: 17px;
+  }
+  footer {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  header nav {
+    padding: 17px 0;
+  }
+  header nav span a {
+    font-size: 20px;
+  }
+  header nav ul {
+    column-gap: 30px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  section.box-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 25px 0;
+    border-radius: 12px;
+    line-height: 1.5;
+  }
+  section.box-title h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  section.box-title p {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  section > h3 {
+    font-size: 22px;
+  }
+  section > hr {
+    width: 100%;
+  }
+  section > p {
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .w-8 {
+    width: 100%;
+  }
+  section ol {
+    padding: 15px 0;
+    padding-left: 40px;
+    font-size: 18px;
+  }
+  footer {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  header nav {
+    padding: 20px 0;
+  }
+  header nav span a {
+    font-size: 22px;
+  }
+  header nav ul {
+    column-gap: 30px;
+  }
+  header nav ul li a {
+    font-size: 22px;
+  }
+  section.box-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 25px 0;
+    border-radius: 15px;
+    line-height: 1.7;
+  }
+  section.box-title h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  section.box-title p {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  section > h3 {
+    font-size: 22px;
+  }
+  section > hr {
+    width: 100%;
+  }
+  section > p {
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .w-8 {
+    width: 100%;
+  }
+  section ol {
+    padding: 15px 0;
+    padding-left: 40px;
+    font-size: 18px;
+  }
+  footer {
+    font-size: 20px;
+    font-weight: bold;
   }
 }
