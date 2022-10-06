@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
     <title>MERN - Summary</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -30,74 +36,204 @@
         <section class="w-8">
           <h3 id="blog">Blog</h3>
           <hr />
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Necessitatibus blanditiis quasi totam, sed, consequatur aperiam
-            deleniti quos laboriosam inventore, culpa dignissimos quisquam.
-            Aperiam quibusdam cumque odit nihil fugiat reiciendis distinctio at.
-            Autem temporibus debitis maxime nihil vero suscipit expedita, omnis
-            quasi eligendi harum et a ducimus, culpa obcaecati accusamus
-            excepturi! Mollitia ut nemo doloribus voluptatum neque. Ab,
-            veritatis? Eaque veritatis recusandae culpa expedita quisquam enim
-            tenetur officia, ullam, sed minima id quibusdam dolorem odit,
-            perspiciatis tempora accusamus sequi harum sunt at delectus quia?
-            Ipsum, placeat labore. Nisi ea veniam nihil explicabo molestias
-            quisquam, aperiam ipsam placeat assumenda iste exercitationem
-            architecto vitae provident at quibusdam cum ipsa nulla, temporibus
-            quaerat. Deserunt exercitationem nobis nihil cupiditate. Nobis
-            explicabo, ipsa expedita doloremque dolor dignissimos quaerat est
-            mollitia sapiente, molestiae tempora quas voluptatem ex culpa amet
-            quam accusantium deserunt impedit quisquam obcaecati? Porro fugit
-            consequatur hic? Explicabo, quo. Doloribus blanditiis nulla quas
-            recusandae aspernatur.            
-          </p>
+          <pre>What is the MERN stack?
+MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack.
+  1) MongoDB — document database
+  2) Express(.js) — Node.js web framework
+  3) React(.js) — a client-side JavaScript framework
+  4) Node(.js) — the premier JavaScript web server
+  <br />
+Web Applications:
+  => Frontend (Client)
+    => HTML, CSS, JS
+      => React (Library)
+<br />
+  => Backend (Server)
+    => Node.js + DB
+    => Database:
+      => MYSQL (SQL)
+      => Mongo (NoSQL)
+
+Web Communications Layer
+  => Frontend <==> Backend
+    => Communication occured by using API
+    => API: Application Programming Interface
+    => Types:
+      => Rest
+      => GraphQL
+    Servers Types:
+      => Shared Hosting
+      => VPS
+      
+    Server Components:
+      => Domain (URI)
+        => Connected to the server using DNS (Domain Name Server)
+        => Database
+          => SQL
+            => MySQL
+            => Maria
+            => Oracle
+            => SQLServer
+            => PostgreSQL
+          => NoSQL
+            => Mongo
+          => Environment (OS)
+      
+      MERN:
+        => M: Mongo Database
+        => E: Express.js Node.js Framework
+        => R: React.js Frontend Library
+        => N: Node.js runtime js environment
+        => SPAL Single Page Applications
+        
+=> Domains Examples
+1. Example: https://www.mr-dev.tech/mern
+  Domain Content:
+  => URI = URL + URN
+  => URL = https://www.mr-dev.tech/
+  => URN = mern
+      
+2. Example: training.mr-dev.tech/mern
+  => URI: training.mr-dev.tech/mern
+  => URL: training.mr-dev.tech/
+  => URN: mern
+      
+API: Application Programming Interface
+  API: 
+  1) Request 
+    1) Protocol: HTTP/HTTPs 
+    2) URI
+      => URI = Uniform Resource Identifier
+      => URI = URL + URN
+      => URI = Uniform Resource Locator + Uniform Resouce Name
+      Example:
+        => https://www.mr-dev.tech/mern
+        => URI: https://www.mr-dev.tech/mern
+        => URI = URL + URN
+          URL = https://www.mr-dev.tech
+          URN = mern
+        => SERVER IP: 45.87.81.78
+        => PING IP: 104.21.6.156 
+    3) HTTP Request Method
+      => GET: Retrieve Data from data source
+      => POST: Save or Process data
+      => PUT/PATCH:
+        => PUT: Send data for update or create if not existed
+        => PATCH: Send data for update and nothing happen if not existed.
+      => DELETE: Delete data from datasoure
+    4) Request Data:
+      => POST,PUT,PATCH
+        => Data can be sent to server side using Request BODY
+        => Request Body Types:
+          => KEY: Value
+            => Key always String
+            => Value: Can be from any type, converted to string
+          => form-data
+            => Used to send
+              => Files
+              => Text
+          => x-www-form-url-encoded
+            => Used to send
+              => Text
+    5) Headers
+      => Consists of Key & Value
+      => Keys & Values are string
+      => Examples:
+        => Content-type: application/json
+        => Accept: application/json
+        => Authorization: TOKEN
+          => Has an expiration date
+          => Unique for each user
+          => Can't be duplicated
+          => has many types (Bearer)
+2) Response
+=> Body
+  => Types
+    => JSON
+      => Java Script Object Notation
+      => Each object Consists of KEY: Value
+        => Key is always "String"
+        => Must add : Between key and value
+        => At the end of each key: value pairs we must add , if there is a new pairs after!
+        => Value types:
+          => String
+          => numeric
+          => bool
+          => null
+          => object
+          => array
+      => JSON Object {}
+      => JSON Array []
+    => XML
+=> Response Status Code:
+  => Consists of Textual Value and number
+  => Examples:
+    => 2xx
+      => 200 OK
+      => 201 Created
+      => 202 Accepted
+      => 203 Non-Authoritative Information
+      => 204 No Content
+    => 4xx
+      => 400 Bad Request
+      => 401 Unauthorized
+      => 402 Payment Required
+      => 403 Forbidden
+      => 404 NotFound
+      => 405 Method Not Allowed
+      => 406 Not Acceptable
+    => 5xx
+      => 500 Internal Server Error
+      => 501 Not Implemented
+      => 502 Bad Gateway
+      => 503 Service Unavailable
+  => Execution Time: (ms/s)
+  => Response Size: (b,kb,m)
+
+Web Protocols:
+  => HTTP/HTTPs (https://www.google.com/)
+    => HTTP: Hyper Text Transfer Protocol - PORT (80)
+    => HTTPs: Hyper Text Transfer Protocol Secured - PORT (443)
+  => FTP/SFTP
+    => File Transfer Protocol => PORT(21)
+    => Secure File Transfer Protocol => PORT(22)</pre>
         </section>
         <section class="w-8">
           <h3 id="topics">Topics</h3>
           <hr />
           <section>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
-              impedit mollitia ratione reprehenderit! Tempore sequi accusamus eos
-              facere ullam fuga ab porro obcaecati reiciendis suscipit unde
-              dolorum possimus, sapiente ratione animi, natus laborum pariatur
-              repellendus.
-            </p>
+            <p>What is the MERN stack?</p>
             <ol>
-              <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                accusamus laborum officia!
-              </li>
-              <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                accusamus laborum officia!
-              </li>
-              <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                accusamus laborum officia!
-              </li>
+              <li>MongoDB — document database</li>
+              <li>Express(.js) — Node.js web framework</li>
+              <li>React(.js) — a client-side JavaScript framework</li>
+              <li>Node(.js) — the premier JavaScript web server</li>
             </ol>
           </section>
           <section>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
-              impedit mollitia ratione reprehenderit! Tempore sequi accusamus eos
-              facere ullam fuga ab porro obcaecati reiciendis suscipit unde
-              dolorum possimus, sapiente ratione animi, natus laborum pariatur
-              repellendus.
-            </p>
+            <p>What is an API?</p>
             <ol type="a">
               <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                accusamus laborum officia!
+                Modern APIs adhere to standards (typically HTTP and REST), that
+                are developer-friendly, easily accessible and understood broadly
               </li>
               <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                accusamus laborum officia!
+                They are treated more like products than code. They are designed
+                for consumption for specific audiences (e.g., mobile
+                developers), they are documented, and they are versioned in a
+                way that users can have certain expectations of its maintenance
+                and lifecycle.
               </li>
               <li>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                accusamus laborum officia!
+                Because they are much more standardized, they have a much
+                stronger discipline for security and governance, as well as
+                monitored and managed for performance and scale
+              </li>
+              <li>
+                As any other piece of productized software, the modern API has
+                its own software development lifecycle (SDLC) of designing,
+                testing, building, managing, and versioning. Also, modern APIs
+                are well documented for consumption and versioning.
               </li>
             </ol>
           </section>
